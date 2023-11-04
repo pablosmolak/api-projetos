@@ -1,0 +1,9 @@
+version: '3.8'
+services: 
+  api-projetos:
+    build: .
+    ports:
+      - 3010:3010
+    environment:
+      - PORT=3010
+      - DB_URL=mongodb+srv://smolak:unidex2021@bddoscrias.v9neqx8.mongodb.net/eventos
